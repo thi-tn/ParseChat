@@ -67,6 +67,9 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.rowHeight = UITableViewAutomaticDimension
         // Provide an estimated row height. Used for calculating scroll indicator
         tableView.estimatedRowHeight = 50
+        tableView.separatorStyle = .none
+        
+        
         
         onTimer()
         // construct query

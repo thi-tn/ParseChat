@@ -96,29 +96,44 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello I'm working on an assignment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8j-mq-i94">
-                                                    <rect key="frame" x="20" y="46.5" width="335" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Ed-FOi">
-                                                    <rect key="frame" x="20" y="17.5" width="84" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbC-Od-3aX">
+                                                    <rect key="frame" x="20" y="11" width="286" height="67"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="Hello I'm working on an assignment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8j-mq-i94">
+                                                            <rect key="frame" x="8" y="35" width="270" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Ed-FOi">
+                                                            <rect key="frame" x="8" y="8" width="84" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.7597839560537536" blue="0.85572019446339898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="M8j-mq-i94" firstAttribute="leading" secondItem="Awp-Ed-FOi" secondAttribute="leading" id="4YF-la-tFO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="M8j-mq-i94" secondAttribute="bottom" constant="11" id="5df-On-wkB"/>
+                                                        <constraint firstItem="M8j-mq-i94" firstAttribute="top" secondItem="Awp-Ed-FOi" secondAttribute="bottom" constant="6" id="BjB-o8-ZIe"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Awp-Ed-FOi" secondAttribute="trailing" constant="10" id="bAy-Da-pqV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="M8j-mq-i94" secondAttribute="trailing" constant="8" id="f3Q-la-iip"/>
+                                                        <constraint firstItem="Awp-Ed-FOi" firstAttribute="leading" secondItem="dbC-Od-3aX" secondAttribute="leading" constant="8" id="u8T-OF-J4L"/>
+                                                        <constraint firstItem="Awp-Ed-FOi" firstAttribute="top" secondItem="dbC-Od-3aX" secondAttribute="top" constant="8" id="vRz-3w-IJZ"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="M8j-mq-i94" secondAttribute="bottom" constant="21.5" id="5Ae-z1-mBW"/>
-                                                <constraint firstItem="M8j-mq-i94" firstAttribute="top" secondItem="Awp-Ed-FOi" secondAttribute="bottom" constant="8" id="B3a-ZY-lYd"/>
-                                                <constraint firstItem="M8j-mq-i94" firstAttribute="leading" secondItem="0kc-pe-BtV" secondAttribute="leading" constant="20" id="H5f-pH-ztD"/>
-                                                <constraint firstItem="Awp-Ed-FOi" firstAttribute="top" secondItem="0kc-pe-BtV" secondAttribute="top" constant="17.5" id="L6I-Lb-yPg"/>
-                                                <constraint firstItem="M8j-mq-i94" firstAttribute="leading" secondItem="Awp-Ed-FOi" secondAttribute="leading" id="XCm-Wf-9zw"/>
-                                                <constraint firstAttribute="trailing" secondItem="M8j-mq-i94" secondAttribute="trailing" constant="20" id="eub-o7-NGq"/>
+                                                <constraint firstItem="dbC-Od-3aX" firstAttribute="leading" secondItem="0kc-pe-BtV" secondAttribute="leading" constant="20" id="9F9-26-JO2"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dbC-Od-3aX" secondAttribute="trailing" constant="20" id="P4n-Zc-Tv2"/>
+                                                <constraint firstAttribute="bottom" secondItem="dbC-Od-3aX" secondAttribute="bottom" constant="10.5" id="leY-WQ-JfV"/>
+                                                <constraint firstItem="dbC-Od-3aX" firstAttribute="top" secondItem="0kc-pe-BtV" secondAttribute="top" constant="11" id="wg3-Eq-vMc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bubbleView" destination="dbC-Od-3aX" id="ZTg-ZW-Wf5"/>
                                             <outlet property="messageLabel" destination="M8j-mq-i94" id="Rga-Nk-h53"/>
                                             <outlet property="username" destination="Awp-Ed-FOi" id="mgh-EJ-8De"/>
                                         </connections>
@@ -164,6 +179,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BaK-DR-PSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032.8" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vyd-Kj-9It">
+            <objects>
+                <viewController id="axi-SD-Hpd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arr-NB-v8K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpG-GV-FTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PxX-Ae-m5p">
+            <objects>
+                <viewController id="rZS-rr-128" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="km6-zQ-f99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tzw-sk-TfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
